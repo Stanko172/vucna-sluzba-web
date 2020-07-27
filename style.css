@@ -9,6 +9,7 @@
 
 body{
     font-family: 'Roboto', sans-serif;
+    background-color: #191e2a;
 }
 /*Navigacija*/
 .brand{
@@ -22,9 +23,11 @@ body{
     font-size: 20px;
 }
 nav{
+    position: relative;
     display: flex;
     height: 8vh;
     background: #191e2a;
+    z-index:1000;
 }
 
 .nav-links{
@@ -41,13 +44,91 @@ nav{
     color: white;
     text-decoration: none;
     font-size: 16px;
+    padding: 0.3em;
 }
 
-.landing{
-    height: 92vh;  
+.nav-links li a:hover{
+    border-bottom: 2px solid #f2c94c;
 }
+
+/*Naslovnica*/
+.landing{
+    height: 92vh;
+    position: relative;
+    background-image: url('background.png');
+    clip-path: polygon(0 0, 83% 0, 47% 100%, 0 100%);
+    -webkit-clip-path:  polygon(0 0, 83% 0, 47% 100%, 0 100%);
+}
+
+/*text box*/
+.text-box {
+    border-radius: 20px;
+    padding: 1.5em;
+    line-height: 2;
+    position: absolute;
+    color: white;
+  	top: 20%;
+  	left: 10%;
+  	transform: translate(-20%, -10%);
+  	text-align: center;
+}
+
+.text-box h1{
+    font-size: 4.5em;
+    letter-spacing: 3px;
+}
+
+/*welcome buttons*/
+
+.welcome-buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.2em;
+}
+
+.welcome-buttons button{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+}
+.btn-info{
+    background: white;
+    width: 150px;
+    height:50px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    color: black;
+}
+
+.btn-contact{
+    background: #f2c94c;
+    width: 150px;
+    height:50px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    color: black;
+}
+/*Hero background*/
+.hero-background{
+    height: 50px;
+    position: absolute;
+    top: 35%;
+    left: 45%;
+}
+
+.hero-background img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+  }
 
 @media screen and (max-width: 768px){
+    .brand{
+        font-size: 16px;
+        width: 60%;
+    }
+
     nav{
         position: relative;
     }
