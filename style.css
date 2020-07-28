@@ -122,6 +122,44 @@ nav{
     height: auto;
   }
 
+/*About us section*/
+.about-us-section{
+    color: white;
+    text-align: center;
+    line-height: 2;
+    padding: 3em;
+}
+
+.about-us-header{
+    letter-spacing: 0.2em;
+}
+
+/*About us card section*/
+.about-us-cards{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    margin: 20px;
+    padding: 20px;
+}
+
+.about-us-card{
+    display: grid;
+    justify-items: center;
+    padding: 3em;
+}
+
+.about-us-card-content{
+    color: white;
+    font-size: 24px;
+    margin-top: 1em;
+}
+
+.material-icons.icon{
+    font-size: 48px;
+    color: #f2c94c;
+}
+
 /*Gallery section*/
 .gallery{
     display: grid;
@@ -227,6 +265,28 @@ nav{
     .hero-background{
         display: none;
     }
+
+    /*O nama 834px max*/
+    .about-us-text{
+        text-align: justify;
+    }
+
+    /*O nama cards 834px max*/
+    .about-us-cards{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .about-us-card{
+        padding: 1.5em;
+    }
+    
+    .about-us-card-content{
+        font-size: 20px;
+    }
+    
+    .material-icons.icon{
+        font-size: 38px;
+    }
 }
 
 @media screen and (max-width: 568px){
@@ -297,5 +357,27 @@ nav{
         font-size: 16px;
         border: none;
         color: black;
+    }
+
+    /*O nama 834px max*/
+    .about-us-text{
+        text-align: justify;
+    }
+
+    /*O nama cards 414px max*/
+    .about-us-cards{
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .about-us-card{
+        padding: 0.5em;
+    }
+    
+    .about-us-card-content{
+        font-size: 16px;
+    }
+    
+    .material-icons.icon{
+        font-size: 32px;
     }
 }
