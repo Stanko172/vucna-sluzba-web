@@ -85,6 +85,11 @@ nav{
     margin-top: 1.2em;
 }
 
+.welcome-buttons a{
+    text-decoration: none;
+    color: black;
+}
+
 .welcome-buttons button{
     font-family: 'Roboto', sans-serif;
     font-size: 1.3em;
