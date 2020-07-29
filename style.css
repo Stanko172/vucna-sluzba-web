@@ -175,9 +175,54 @@ nav{
     box-shadow: 0px 1px 5px rgba(104, 104, 104, 104);
 }
 
+/*Contact section*/
+.contact-section{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.contact-info{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 3em;
+}
+
+.contact-info i{
+    font-size: 44px;
+    color: #f2c94c;
+}
+
+.contact-info div{
+    display: flex;
+    align-items: center;
+}
+
+.contact-info span{
+    color: white;
+    font-size: 24px;
+    margin-left: 1em;
+}
+
+.location-info{
+    width:100%;
+}
+
+/*Footer*/
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #20232a;
+    color: white;
+    font-size: 16px;
+    height: 50px;
+}
+
 @media screen and (max-width: 834px){
     .brand{
-        font-size: 16px;
+        font-size: 18px;
         width: 60%;
     }
 
@@ -287,6 +332,24 @@ nav{
     .material-icons.icon{
         font-size: 38px;
     }
+
+    /*Contact section*/
+    .contact-section{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 3em;
+    }
+
+    .contact-info div{
+        margin: 1em;
+    }
 }
 
 @media screen and (max-width: 568px){
@@ -379,5 +442,16 @@ nav{
     
     .material-icons.icon{
         font-size: 32px;
+    }
+
+    /*Contact section 414px max*/
+    .contact-info i{
+        font-size: 24px;
+    }
+    
+    .contact-info span{
+        color: white;
+        font-size: 16px;
+        margin-left: 1em;
     }
 }
